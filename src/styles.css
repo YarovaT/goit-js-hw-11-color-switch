@@ -21,7 +21,7 @@ button {
   align-items: center;
   justify-content: center;
   color: #fff;
-  background-color: #2196f3;
+  background-color: #3a3d3f;
   border: 0;
   outline: 0;
   padding: 8px 24px;
@@ -36,5 +36,4 @@ button {
 
 button:hover {
   box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.15);
-  background-color: #1976d2;
 }
