@@ -23,15 +23,11 @@ refs.btnStart.addEventListener("click", () => {
   timerId = setInterval(() => {
     i = i < colors.length ? (i += 1) : 0;
     document.body.style.background = colors[i];
+    refs.btnStart.setAttribute("disabled", true);
   }, 1000);
 });
 
 refs.btnStop.addEventListener("click", () => {
   clearInterval(timerId);
+  refs.btnStart.removeAttribute("disabled");
 });
-
-// function btnIsNotActive() {
-//   if (setInterval) {
-//     refs.btnStart.setAttribute("disabled", true);
-//   }
-// }
